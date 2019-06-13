@@ -1,5 +1,16 @@
 {
   "dependencies": {
-    "reveal.js": "^3.5.0"
+    "reveal.js": "^3.5.0",
+    "monaco-editor": "0.17.*",
+    "vendor-copy": "^2.0.0"
+  },
+  "vendorCopy": [
+    {
+      "from": "node_modules/monaco-editor/",
+      "to": "static/monaco-editor"
+    }
+  ],
+  "scripts": {
+    "vendor-copy": "vendor-copy"
   }
 }

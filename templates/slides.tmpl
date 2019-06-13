@@ -50,6 +50,12 @@
         <script type="text/javascript" src="/static/reveal.js/plugin/markdown/marked.js"></script>
         <script type="text/javascript" src="/static/reveal.js/plugin/markdown/markdown.js"></script>
         <script src="/static/js/slides.js"></script>
+        <!-- monaco stuff -->
+        <script src="/static/monaco-editor/min/vs/loader.js"></script>
+        <script>
+            require.config({ paths: { 'vs': '/static/monaco-editor/min/vs' }});
+            console.info('Initialized MonacoLoader');
+        </script>
     </body>
 </html>
 {{ end }}
