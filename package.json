@@ -2,15 +2,21 @@
   "dependencies": {
     "reveal.js": "^3.5.0",
     "monaco-editor": "0.17.*",
-    "vendor-copy": "^2.0.0"
+    "vendor-copy": "^2.0.0",
+    "@zalari/typescript-editor-component": "*"
   },
   "vendorCopy": [
     {
       "from": "node_modules/monaco-editor/",
       "to": "static/monaco-editor"
+    },
+    {
+      "from": "node_modules/@zalari/typescript-editor-component",
+      "to": "static/typescript-editor-component"
     }
   ],
   "scripts": {
-    "vendor-copy": "vendor-copy"
+    "vendor-copy": "vendor-copy",
+    "postinstall": "vendor-copy"
   }
 }
