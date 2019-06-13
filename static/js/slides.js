@@ -15,6 +15,11 @@ function initializeReveal() {
         transitionSpeed: isPreview() ? 'fast' : 'default',
         embedded: isPreview() ? true : false,
 
+        // disable sanitation for marked to allow all kind of crazy stuff
+        marked: {
+          sanitize: false
+        },
+
         // Optional reveal.js plugins
         dependencies: [{
             src: '/static/reveal.js/lib/js/classList.js',
