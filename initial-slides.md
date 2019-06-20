@@ -27,6 +27,18 @@ Note:
 
 ---
 
+## TypeScript Editor Component Usage
+<typescript-editor-component base-url="/static/typescript-editor-component/dist/collection/">
+<code>
+// Click inside me, to edit and get IntelliSense
+// open the console
+// give me focus by clicking and typing and  
+// press LeftOption to see the script being evaluated
+console.log(2 + 2 === 5);
+</code>
+
+---
+
 ## More markdown (fragments)
 
 * static text
